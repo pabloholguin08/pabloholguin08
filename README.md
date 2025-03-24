@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Juan Pablo Holguín Cuartas  
 
 ## 📖 About Me  
-I'm a **Labor Technician in Software Development**, passionate about technology, teamwork, and continuous learning. I consider myself proactive, responsible, and a strong communicator with leadership skills. My goal is to contribute to meaningful projects while improving my skills and knowledge.  
+I'm a **Software developer**, passionate about technology, teamwork, and continuous learning. I consider myself proactive, responsible, and a strong communicator with leadership skills. My goal is to contribute to meaningful projects while improving my skills and knowledge.  
 
 ## 🎓 Education  
 - **2022-2023** - Technologist Analysis and Development of Information Systems | **SENA** 
