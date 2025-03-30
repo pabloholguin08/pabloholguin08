@@ -36,7 +36,7 @@ I'm a **Software developer**, passionate about technology, teamwork, and continu
 
 ## 🎓 Education  
 - **2022-2023** - Technologist Analysis and Development of Information Systems | **SENA** 
-- **2021** - Technician in Software Development and Programming | **CESDE**  
+- **2020-2021** - Technician in Software Development and Programming | **CESDE**  
 
 ## 📫 Contact Me  
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:jpholguin06@gmail.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juanpablo-holguín-cuartas) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/pabloholguin08)  
