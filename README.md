@@ -1,5 +1,9 @@
 # 👋 Hi there, I'm Juan Pablo Holguín Cuartas. Welcome to my profile!!!
 
+<div align="center">
+  <img src="/images/me.jpg" alt="Me!" width="400">
+</div>
+
 ## 📖 About Me  
 I'm a **Software developer**, passionate about technology, teamwork, and continuous learning. I consider myself proactive, responsible, and a strong communicator with leadership skills. My goal is to contribute to meaningful projects while improving my skills and knowledge.  
 
