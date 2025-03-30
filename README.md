@@ -1,7 +1,7 @@
 # 👋 Hi there, I'm Juan Pablo Holguín Cuartas. Welcome to my profile!!!
 
 <div align="center">
-  <img src="/images/me.jpg" alt="Me!" width="400">
+  <img src="/images/me.png" alt="Me!" width="400">
 </div>
 
 ## 📖 About Me  
