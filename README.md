@@ -58,6 +58,41 @@ Software Developer with 3+ years of experience building web applications, micros
 
 ## 🚀 Featured Projects
 
+### [🧩 Pedidos — Distributed Order System (Microservices)](https://github.com/pabloholguin08/microservices)
+A simplified e-commerce order system built as three independently deployable microservices that coordinate exclusively through a message broker using a choreography-based saga — focused on distributed-systems concerns (eventual consistency, idempotent consumers, optimistic-locking under concurrency, dead-letter handling), not just splitting a CRUD app into three deployables.
+
+![Java](https://img.shields.io/badge/Java_21-007396?style=flat-square&logo=java&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot_4.1-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![React](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+- Three services coordinate through RabbitMQ via a choreography-based saga — no orchestrator, no synchronous inter-service calls
+- Optimistic locking (`@Version`) proven under real concurrency: a dedicated test fires two simultaneous stock reservations against one unit of inventory and asserts only one succeeds
+- Idempotent consumers plus per-queue dead-letter handling with retry/backoff, so a poison message is quarantined instead of blocking the queue
+- Full observability wired in: Prometheus/Grafana metrics, OpenTelemetry/Jaeger distributed tracing, and correlation-id log propagation across all three services
+- Ships two ways: `docker compose up` for the whole stack in one command, or Helm charts on a local kind cluster for a production-like Kubernetes path with real liveness/readiness probes and horizontally scaled pods
+- Backend tests run against real Postgres + RabbitMQ via **Testcontainers**; CI runs the full suite per service on every push/PR
+
+### [🎧 Shazam-lite — Audio Fingerprinting Engine](https://github.com/pabloholguin08/shazam-lite)
+A from-scratch audio fingerprinting / song identification service — the same constellation-map + combinatorial-hashing idea behind Shazam, built to understand the algorithm rather than to compete with it. Register a handful of songs, then identify a short, possibly noisy or trimmed clip against that catalog.
+
+![Python](https://img.shields.io/badge/Python_3.12-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy%2FSciPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=flat-square&logo=sqlite&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+- Full pipeline implemented from scratch: spectrogram → peak extraction → combinatorial hashing → offset-histogram voting
+- Offset-histogram voting replaces naive "most shared hashes wins" matching, which fails against noisy/trimmed clips — regression-tested to guard against that failure mode
+- Confidence-thresholded matching: below the documented threshold the API returns `matched: false` instead of a low-confidence guess
+- Test suite runs entirely on synthetic, deterministically-generated audio (no copyrighted files needed), covering fingerprint stability, noise/trim robustness, and end-to-end API integration
+- Packaged with Docker; ships a minimal upload/record web frontend alongside the REST API
+
 ### [🏟️ Sports Courts — Booking Platform](https://github.com/pabloholguin08/reservations)
 A full-stack court booking system (register, browse courts, check availability, book a slot) built as a portfolio piece to demonstrate clean architecture, realistic concurrency handling, automated testing, and CI/CD.
 
